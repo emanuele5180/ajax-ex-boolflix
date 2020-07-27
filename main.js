@@ -3,23 +3,27 @@
 
 
 function submitInfo() {
-  var btn = $ ('submit');
+  var btn = $ ('#submit');
   btn.click(giveInformation);
-  console.log('btn' ,btn);
 
-  giveInformation();
+
+
+  console.log();
 }
 
-function giveInformation(){
-  var info = $ ('searchbar').value;
-  console.log('btn', giveInformation);
+function giveInformation(info){
+  var info = $('#searchbar').val();
+  
+  console.log(info);
+
 
 }
 
 function init() {
   console.log("helloworld");
-  
+
   submitInfo();
+
 
 
 
