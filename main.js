@@ -48,10 +48,18 @@ function getMovies() {
 
 }
 
+function convertNumbers() {
+  var originalNumber = 4.59;
+  var integer = Math.ceil (originalNumber);
+
+  console.log('numero: ',integer);
+}
+
 function init() {
   console.log("helloworld");
 
   addSearchListener();
+  convertNumbers();
 
   // submitInfo();
 
