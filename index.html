@@ -16,7 +16,7 @@
 
     <div class="container">
       <div class="header">
-        <input id="query" type="text" name="searchbar" value=""> <!--  id=searchbar -->
+        <input id="query" type="text" name="searchbar" value="ritorno al futuro"> <!--  id=searchbar -->
         <button id="search" type="button" name="button">search</button>  <!--id submit -->
 
 
@@ -24,6 +24,7 @@
       <div id="results" class="results">
         <ul></ul>
       </div>
+
 
 
     </div>
@@ -34,14 +35,30 @@
 
         <li>
           {{ title }} <br>
-          {{ original_title}} <br>
-          {{ original_language }}<br>
-          {{ vote_average}}
+          {{ original_title }} <br>
+          {{ original_language }}<br> <!-- debug -->
+          {{ vote_average}}<br>   <!-- debug -->
+          {{{ stars }}} <br>
+          {{{ flag }}}
+          <!-- {{{test}}} -->
         </li>
 
 
     </script>
+    <script id="serie-template" type="text/x-handlebars-template">
 
+        <li>
+          {{ name }} <br>
+          {{ original_name }} <br>
+          {{ original_language }}<br> <!-- debug -->
+          {{ vote_average}}<br>   <!-- debug -->
+          {{{ stars }}} <br>
+          {{{ flag }}}
+          <!-- {{{test}}} -->
+        </li>
+
+
+    </script>
 
 
     <script type="text/javascript" src="main.js">
