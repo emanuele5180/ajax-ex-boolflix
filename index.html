@@ -16,14 +16,31 @@
 
     <div class="container">
       <div class="header">
-        <input id="query" type="text" name="searchbar" value="ritorno al futuro"> <!--  id=searchbar -->
-        <button id="search" type="button" name="button">search</button>  <!--id submit -->
+        <div class="mainbar">
+          <div class="bar-right">
+            <div id="logo" class="logo">
+              <a href="#">BOOLFLIX</a>
+            </div>
+          </div>
+          <div class="bar-left">
+            <input id="query" type="text" name="searchbar" value=""> <!--  id=searchbar -->
+            <button id="search" type="button" name="button">search</button>  <!--id submit -->
+          </div>
+
+
+        </div>
+
 
 
       </div>
-      <div id="results" class="results">
-        <ul></ul>
-      </div>
+
+      <body>
+        <div id="results" class="results">
+          <ul></ul>
+        </div>
+
+      </body>
+
 
 
 
@@ -39,7 +56,8 @@
           {{ original_language }}<br> <!-- debug -->
           {{ vote_average}}<br>   <!-- debug -->
           {{{ stars }}} <br>
-          {{{ flag }}}
+          {{{ flag }}} <br>
+          <img class="poster" src="https://image.tmdb.org/t/p/w185/{{ poster_path }}" alt="">
           <!-- {{{test}}} -->
         </li>
 
@@ -53,12 +71,14 @@
           {{ original_language }}<br> <!-- debug -->
           {{ vote_average}}<br>   <!-- debug -->
           {{{ stars }}} <br>
-          {{{ flag }}}
+          {{{ flag }}} <br>
+          <img class="poster" src="https://image.tmdb.org/t/p/w185/{{ poster_path }}" alt="">
           <!-- {{{test}}} -->
         </li>
 
 
     </script>
+
 
 
     <script type="text/javascript" src="main.js">

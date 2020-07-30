@@ -53,6 +53,9 @@ function getMovies(query) {
         var lang = movie['original_language'];
         movie.flag = getFlag(lang);
 
+        // var poster = movie ['poster_path'];
+        // movie.poster = getPosterHTML(poster);
+
 
         var movieHTML = compiled(movie);
         target.append(movieHTML);
@@ -158,6 +161,7 @@ function getFlag(lang){
   // questa è la stessa cosa ma più leggera, l'else non serve
 
 }
+
 
 
 function init() {
