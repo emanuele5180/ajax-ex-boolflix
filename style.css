@@ -55,6 +55,8 @@
 
 .results {
   margin-top: 100px;
+  display: flex;
+
 }
 
 ul{
@@ -62,4 +64,8 @@ ul{
   height: auto;
   background-color: lightgrey;
   margin: 50px;
+}
+
+li {
+  list-style: none;
 }
