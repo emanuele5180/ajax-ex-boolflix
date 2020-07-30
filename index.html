@@ -23,20 +23,18 @@
             </div>
           </div>
           <div class="bar-left">
-            <input id="query" type="text" name="searchbar" value=""> <!--  id=searchbar -->
+            <input id="query" type="text" name="searchbar" value="ritorno al futuro"> <!--  id=searchbar -->
             <button id="search" type="button" name="button">search</button>  <!--id submit -->
           </div>
 
 
         </div>
-
-
-
       </div>
 
       <body>
         <div id="results" class="results">
-          <ul></ul>
+          <ul>
+          </ul>
         </div>
 
       </body>
@@ -48,8 +46,9 @@
 
 
 
-    <script id="movie-template" type="text/x-handlebars-template">
 
+    <script id="movie-template" type="text/x-handlebars-template">
+      <ul>
         <li>
           {{ title }} <br>
           {{ original_title }} <br>
@@ -60,6 +59,11 @@
           <img class="poster" src="https://image.tmdb.org/t/p/w185/{{ poster_path }}" alt="">
           <!-- {{{test}}} -->
         </li>
+      </ul>
+
+
+
+
 
 
     </script>
