@@ -32,10 +32,13 @@
       </div>
 
       <body>
-        <div id="results" class="results">
-          <ul>
-          </ul>
-        </div>
+        <section class="films">
+          <div id="results" class="results">
+            <ul>
+            </ul>
+          </div>
+
+        </section>
 
       </body>
 
@@ -56,19 +59,16 @@
           {{ vote_average}}<br>   <!-- debug -->
           {{{ stars }}} <br>
           {{{ flag }}} <br>
-          <img class="poster" src="https://image.tmdb.org/t/p/w185/{{ poster_path }}" alt="">
+          <!-- <img class="poster" src="https://image.tmdb.org/t/p/w185/{{ poster_path }}" alt=""> -->
           <!-- {{{test}}} -->
         </li>
       </ul>
 
-
-
-
-
-
     </script>
-    <script id="serie-template" type="text/x-handlebars-template">
 
+
+    <script id="serie-template" type="text/x-handlebars-template">
+      <ul>
         <li>
           {{ name }} <br>
           {{ original_name }} <br>
@@ -76,9 +76,12 @@
           {{ vote_average}}<br>   <!-- debug -->
           {{{ stars }}} <br>
           {{{ flag }}} <br>
-          <img class="poster" src="https://image.tmdb.org/t/p/w185/{{ poster_path }}" alt="">
+          <!-- <img class="poster" src="https://image.tmdb.org/t/p/w342/{{ poster_path }}" alt=""> -->
           <!-- {{{test}}} -->
         </li>
+      </ul>
+
+
 
 
     </script>

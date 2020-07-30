@@ -38,7 +38,7 @@ function getMovies(query) {
       var movies = data['results'];
 
       //spostato nella startSearch con cambio di nome da target a targetResult
-      var target = $ ('#results ul');
+      var target = $ ('#results');  //ul
       // target.text('');  //cancella i risultati precedenti
       var template = $ ('#movie-template').html();
       var compiled = Handlebars.compile(template);
@@ -89,7 +89,7 @@ function getSeries(query){
       var series = data['results'];
 
 
-      var target = $ ('#results ul');
+      var target = $ ('#results');  //ul
 
       var template = $ ('#serie-template').html();
       var compiled = Handlebars.compile(template);

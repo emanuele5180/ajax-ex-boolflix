@@ -20,6 +20,13 @@
   overflow: auto;
 }
 
+.films {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
 
 /* header bar */
 .mainbar {
@@ -52,7 +59,7 @@
 
 ul{
   width: 150px;
-  height: 300px;
+  height: auto;
   background-color: lightgrey;
   margin: 50px;
 }
